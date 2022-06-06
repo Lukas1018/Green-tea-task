@@ -1,5 +1,9 @@
+/*       Mobile version      */
 * {
   box-sizing: border-box;
+}
+body {
+  background-color: rgb(240, 240, 240);
 }
 header {
   font-family: "Open Sans", sans-serif;
@@ -16,6 +20,7 @@ header img {
   padding: 4em 0 2em;
 }
 ul {
+  padding-left: 0;
   text-align: center;
   list-style-type: none;
 }
@@ -25,15 +30,105 @@ li {
 a {
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: rgb(240, 240, 240);
 }
 div.fixed {
   font-size: smaller;
   background-color: #84a009;
-  color: white;
+  color: rgb(240, 240, 240);
   width: 100%;
   text-align: center;
   position: fixed;
   top: 0;
   padding: 0.4rem;
+  margin: 0 auto;
+}
+article {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 3em;
+}
+.choise,
+.benefits {
+  box-shadow: 1px 1px 5px gray;
+}
+article.benefits img,
+div {
+  width: 95%;
+  margin-bottom: 1em;
+}
+article.benefits div {
+  background-color: #a9cb0f;
+  margin-top: 1em;
+  padding: 0 2em;
+}
+article.choise h2 {
+  align-self: flex-start;
+  padding-left: 1rem;
+}
+article.production {
+  border: none;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+  margin-top: 6em;
+}
+article.production section {
+  box-shadow: 1px 1px 5px gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+}
+.title-1,
+.title-2,
+.title-3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  width: 100%;
+}
+.title-1 {
+  background-color: rgb(216, 73, 73);
+}
+.title-2 {
+  background-color: rgb(255, 162, 0);
+}
+.title-3 {
+  background-color: rgb(108, 247, 229);
+}
+img.title {
+  padding-left: 1em;
+  height: 1.2em;
+}
+article.production section img {
+  max-width: 100%;
+}
+h2,
+h3,
+p {
+  font-family: "Amaranth", sans-serif;
+}
+article.choise h3 {
+  text-transform: uppercase;
+  color: grey;
+}
+article.choise h2,
+section h3,
+section p {
+  color: rgb(91, 91, 91);
+}
+a,
+div.fixed,
+.benefits,
+.title-1 h3,
+.title-2 h3,
+.title-3 h3 {
+  color: rgb(240, 240, 240);
 }
