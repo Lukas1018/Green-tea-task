@@ -9,7 +9,7 @@ header {
   font-family: "Open Sans", sans-serif;
   width: 100%;
   background-image: url("/assets/bg.jpg");
-  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -22,12 +22,17 @@ header {
 .logo {
   display: flex;
   justify-content: center;
-  padding-top: 4em;
+  padding: 3em;
+  padding-bottom: 2em;
+}
+.logo img {
+  max-width: 50%;
 }
 ul {
   padding-left: 0;
   text-align: center;
   list-style-type: none;
+  padding-bottom: 1em;
 }
 li {
   padding: 0.5rem;
@@ -37,7 +42,7 @@ a {
   text-transform: uppercase;
 }
 div.fixed {
-  font-size: smaller;
+  font-size: 0.8em;
   background-color: #84a009a7;
   width: 100%;
   text-align: center;
@@ -47,17 +52,17 @@ div.fixed {
   margin: 0 auto;
 }
 article {
-  width: 90%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
   margin: 0 auto;
-  margin-top: 3em;
+  margin-top: 2.5em;
 }
 .benefits,
 .choise {
-  box-shadow: 1px 1px 5px gray;
+  box-shadow: 1px 1px 4px rgb(208, 208, 208);
   padding: 1em;
 }
 .benefits img,
@@ -65,14 +70,24 @@ div {
   width: 100%;
 }
 .benefits div {
-  background-color: #a9cb0f;
-  
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+  background-color: #b1c64f;
+  font-size: 0.9rem;
   padding: 0 2em;
   margin-bottom: 1em;
 }
+.benefits h2 {
+  margin: 0.5em 0 0 0;
+}
+.benefits p {
+  margin: 0.5rem auto;
+  font-weight: 0.5em;
+}
 .choise h2 {
   align-self: flex-start;
-  padding-left: 1rem;
+  font-size: 1.3em;
 }
 .choise-1,
 .choise-2,
@@ -83,17 +98,20 @@ div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
 }
 .production {
   border: none;
   background-color: rgb(240, 240, 240);
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   gap: 6em;
-  margin-top: 6em;
+  margin-bottom: 6em;
 }
 .production section {
-  box-shadow: 1px 1px 5px gray;
+  box-shadow: 1px 1px 4px rgb(208, 208, 208);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,7 +123,7 @@ div {
 .title-3 {
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.1em;
   width: 100%;
 }
 .title-1 {
@@ -115,36 +133,50 @@ div {
   background-color: rgb(255, 162, 0);
 }
 .title-3 {
-  background-color: rgb(108, 247, 229);
+  background-color: rgb(85, 207, 191);
 }
 img.title {
   padding-left: 1em;
   height: 1.2em;
 }
 article.production section img {
-  max-width: 100%;
+  max-width: 70%;
+  margin-top: 0.5em;
 }
 h2,
 h3,
 p {
   font-family: "Amaranth", sans-serif;
-}
-article.choise h3 {
-  text-transform: uppercase;
+  font-weight: lighter;
 }
 .choise h3,
 .choise h2,
-section h3,
+section h4,
 section p {
-  color: rgb(91, 91, 91);
+  color: rgb(129, 129, 129);
 }
 a,
 .fixed,
-.benefits,
+.benefits {
+  color: rgb(210, 220, 195);
+}
+h2,
 .title-1 h3,
 .title-2 h3,
 .title-3 h3 {
   color: rgb(240, 240, 240);
+  margin: 0.6em;
+}
+section p {
+  font-size: 0.7em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  margin: 1.3em;
+}
+section h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.5em;
 }
 /*      Breakpoint 900px         */
 @media screen and (min-width: 900px) {
@@ -211,12 +243,12 @@ a,
     flex-direction: row;
     gap: 2em;
   }
- .benefits div {
-   align-self: flex-start;
-   position: absolute; 
-   background-color: #a9cb0fd7;
-   width: 30%;
-   padding: 0 1em;
-   text-align: left;
- }
+  .benefits div {
+    align-self: flex-start;
+    position: absolute;
+    background-color: #8ccb0fd7;
+    width: 30%;
+    padding: 0 1em;
+    text-align: left;
+  }
 }
