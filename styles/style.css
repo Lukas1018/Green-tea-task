@@ -16,8 +16,13 @@ header {
   align-items: center;
   justify-content: center;
 }
-header img {
-  padding: 4em 0 2em;
+.cart {
+  display: none;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 4em;
 }
 ul {
   padding-left: 0;
@@ -30,12 +35,10 @@ li {
 a {
   text-decoration: none;
   text-transform: uppercase;
-  color: rgb(240, 240, 240);
 }
 div.fixed {
   font-size: smaller;
-  background-color: #84a009;
-  color: rgb(240, 240, 240);
+  background-color: #84a009a7;
   width: 100%;
   text-align: center;
   position: fixed;
@@ -52,25 +55,36 @@ article {
   margin: 0 auto;
   margin-top: 3em;
 }
-.choise,
-.benefits {
+.benefits,
+.choise {
   box-shadow: 1px 1px 5px gray;
+  padding: 1em;
 }
-article.benefits img,
+.benefits img,
 div {
-  width: 95%;
+  width: 100%;
+}
+.benefits div {
+  background-color: #a9cb0f;
+  
+  padding: 0 2em;
   margin-bottom: 1em;
 }
-article.benefits div {
-  background-color: #a9cb0f;
-  margin-top: 1em;
-  padding: 0 2em;
-}
-article.choise h2 {
+.choise h2 {
   align-self: flex-start;
   padding-left: 1rem;
 }
-article.production {
+.choise-1,
+.choise-2,
+.choise-3,
+.choise-4,
+.choise-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.production {
   border: none;
   background-color: rgb(240, 240, 240);
   display: flex;
@@ -78,7 +92,7 @@ article.production {
   gap: 6em;
   margin-top: 6em;
 }
-article.production section {
+.production section {
   box-shadow: 1px 1px 5px gray;
   display: flex;
   flex-direction: column;
@@ -117,18 +131,92 @@ p {
 }
 article.choise h3 {
   text-transform: uppercase;
-  color: grey;
 }
-article.choise h2,
+.choise h3,
+.choise h2,
 section h3,
 section p {
   color: rgb(91, 91, 91);
 }
 a,
-div.fixed,
+.fixed,
 .benefits,
 .title-1 h3,
 .title-2 h3,
 .title-3 h3 {
   color: rgb(240, 240, 240);
+}
+/*      Breakpoint 900px         */
+@media screen and (min-width: 900px) {
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  nav {
+    width: 80%;
+  }
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo,
+  .cart {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    padding: 4em 0em 2em;
+  }
+  .logo {
+    justify-content: flex-start;
+  }
+  .cart {
+    justify-content: flex-end;
+    color: rgb(240, 240, 240);
+    gap: 0.5em;
+  }
+  .cart span {
+    text-align: right;
+    font-family: "Open Sans", sans-serif;
+  }
+  .choise {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .choise img {
+    max-width: 80%;
+  }
+  .choise-1,
+  .choise-2,
+  .choise-3,
+  .choise-4,
+  .choise-5 {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .choise h2 {
+    width: 100%;
+  }
+  .production {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+ .benefits div {
+   align-self: flex-start;
+   position: absolute; 
+   background-color: #a9cb0fd7;
+   width: 30%;
+   padding: 0 1em;
+   text-align: left;
+ }
 }
