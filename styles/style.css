@@ -7,7 +7,7 @@ body {
 }
 header {
   font-family: "Open Sans", sans-serif;
-  width: 100%;
+  max-width: 100%;
   background-image: url("/assets/bg.jpg");
   background-position: center;
   background-size: cover;
@@ -26,16 +26,16 @@ header {
   padding-bottom: 2em;
 }
 .logo img {
-  max-width: 50%;
+  max-width: 90%;
 }
 ul {
   padding-left: 0;
   text-align: center;
   list-style-type: none;
-  padding-bottom: 1em;
+  padding-bottom: 0.8em;
 }
 li {
-  padding: 0.5rem;
+  padding: 0.6rem;
 }
 a {
   text-decoration: none;
@@ -67,7 +67,7 @@ article {
 }
 .benefits img,
 div {
-  width: 100%;
+  max-width: 100%;
 }
 .benefits div {
   display: flex;
@@ -85,7 +85,11 @@ div {
   margin: 0.5rem auto;
   font-weight: 0.5em;
 }
+.choise img {
+  max-width: 90%;
+}
 .choise h2 {
+  margin-top: 0;
   align-self: flex-start;
   font-size: 1.3em;
 }
@@ -107,8 +111,8 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 6em;
-  margin-bottom: 6em;
+  gap: 5.5em;
+  margin: 5.5em auto;
 }
 .production section {
   box-shadow: 1px 1px 4px rgb(208, 208, 208);
@@ -123,7 +127,7 @@ div {
 .title-3 {
   display: flex;
   align-items: center;
-  gap: 0.1em;
+  gap: 0.5em;
   width: 100%;
 }
 .title-1 {
@@ -139,9 +143,9 @@ img.title {
   padding-left: 1em;
   height: 1.2em;
 }
-article.production section img {
+img.product {
   max-width: 70%;
-  margin-top: 0.5em;
+  margin: 0.7em;
 }
 h2,
 h3,
@@ -165,13 +169,13 @@ h2,
 .title-2 h3,
 .title-3 h3 {
   color: rgb(240, 240, 240);
-  margin: 0.6em;
+  margin: 0.6em 0;
 }
 section p {
   font-size: 0.7em;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  margin: 1.3em;
+  margin: 1.4em;
 }
 section h4 {
   font-family: "Open Sans", sans-serif;
@@ -181,13 +185,13 @@ section h4 {
 /*      Breakpoint 900px         */
 @media screen and (min-width: 900px) {
   header {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
   nav {
-    width: 80%;
+    width: 75%;
   }
   ul {
     width: 100%;
@@ -199,7 +203,7 @@ section h4 {
   .cart {
     display: flex;
     align-items: center;
-    width: 40%;
+    width: 37%;
     padding: 4em 0em 2em;
   }
   .logo {
@@ -209,8 +213,10 @@ section h4 {
     justify-content: flex-end;
     color: rgb(240, 240, 240);
     gap: 0.5em;
+    color: rgb(218, 218, 172);
   }
   .cart span {
+    font-size: 0.7;
     text-align: right;
     font-family: "Open Sans", sans-serif;
   }
@@ -219,9 +225,6 @@ section h4 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .choise img {
-    max-width: 80%;
   }
   .choise-1,
   .choise-2,
@@ -237,18 +240,23 @@ section h4 {
   }
   .choise h2 {
     width: 100%;
+    margin-top: 0;
   }
   .production {
     display: flex;
     flex-direction: row;
+    margin: 4em auto;
     gap: 2em;
   }
   .benefits div {
     align-self: flex-start;
     position: absolute;
-    background-color: #8ccb0fd7;
-    width: 30%;
+    background-color: #9ccb0fd7;
+    width: 28%;
     padding: 0 1em;
-    text-align: left;
+    margin-top: 1em;
+  }
+  .benefits div p {
+    margin-left: 0;
   }
 }
